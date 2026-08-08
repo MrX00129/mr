@@ -7,3 +7,9 @@ Upload `index.html` and `style.css` directly to the repository root. `README.md`
 
 ## Customize
 Replace `YOUR_EMAIL@example.com` with the real contact email. GitHub and LinkedIn links can also be changed in `index.html`.
+
+
+## Live projects
+- Fry Cuisine: https://frycuisine.com/
+- iDigitalpreneur: https://idigitalpreneur.com/
+- LinkedIn: https://www.linkedin.com/in/mr-ali7/
