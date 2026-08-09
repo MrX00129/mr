@@ -217,3 +217,18 @@ footer{border-color:var(--line);color:#718078;font-size:10px}
  .premium-art span{animation:iconPulse 3.5s ease-in-out infinite}
  @keyframes iconPulse{50%{transform:scale(1.05)}}
 }
+
+/* V8 — unique process cards */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;padding:25px 0 10px}
+.steps:before{content:"";position:absolute;left:8%;right:8%;top:75px;height:1px;background:linear-gradient(90deg,#b9ddc5,#159447,#b9ddc5);opacity:.65}
+.steps>div{min-height:285px;margin:0 7px;padding:25px 22px!important;border-radius:24px!important;background:linear-gradient(180deg,#fff,#f6fbf7)!important;border:1px solid #d6e7dc!important;box-shadow:0 15px 45px rgba(17,83,42,.07)!important;position:relative;overflow:hidden;opacity:0;transform:translateY(25px);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .35s}
+.steps>div.show{opacity:1;transform:none}
+.steps>div:before{content:"";position:absolute;left:22px;right:22px;top:0;height:3px;border-radius:0 0 10px 10px;background:linear-gradient(90deg,#159447,#7ae39c);transform:scaleX(0);transform-origin:left;transition:.45s}
+.steps>div:after{content:"";position:absolute;width:105px;height:105px;right:-42px;bottom:-45px;border-radius:50%;background:rgba(21,148,71,.09);filter:blur(5px);transition:.45s}
+.steps>div:hover{transform:translateY(-12px)!important;border-color:#83c99a!important;box-shadow:0 28px 65px rgba(21,148,71,.14)!important}
+.steps>div:hover:before{transform:scaleX(1)}.steps>div:hover:after{transform:scale(1.4)}
+.steps b{position:relative;z-index:2;width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#e6f7ec;border:1px solid #c6e3cf;color:#159447!important;font:700 12px "Space Grotesk";box-shadow:0 8px 22px rgba(21,148,71,.08)}
+.steps h3{position:relative;z-index:2;font-size:20px!important;margin:38px 0 10px!important;color:#123521!important}
+.steps p{position:relative;z-index:2;font-size:11px!important;line-height:1.8!important;color:#64736b!important}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:15px}.steps:before{display:none}.steps>div{margin:0;min-height:240px}}
+@media(max-width:650px){.steps{grid-template-columns:1fr}.steps>div{min-height:220px}}
